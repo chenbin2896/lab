@@ -1,0 +1,124 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+    <!--<meta charset="UTF-8">-->
+    <!--<title>蜗牛商城后台管理系统</title>-->
+    <!--<meta content="width=de vice-width,initial-scale=1,maximum-scale=1,user-scalable=no" name="viewport">-->
+    <!--<link rel="stylesheet" href="../plugins/bootstrap/css/bootstrap.min.css">-->
+    <!--<link rel="stylesheet" href="../plugins/adminLTE/css/AdminLTE.css">-->
+    <!--<link rel="stylesheet" href="../plugins/adminLTE/css/skins/_all-skins.min.css">-->
+    <!--<link rel="stylesheet" href="../css/style.css">-->
+    <!--<script src="../plugins/jQuery/jquery-2.2.3.min.js"></script>-->
+    <!--<script src="../plugins/bootstrap/js/bootstrap.min.js"></script>-->
+
+<!--</head>-->
+<!--<body>-->
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">预约系统</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li><a href="main.html">首页</a></li>
+                <li><a href="accountinfo.html">账号管理</a></li>
+                <li><a href="labname.html">机房名称</a></li>
+                <li><a href="labrecord.html">预约记录</a></li>
+                <li><a href="labstate.html">时间段管理</a></li>
+                <li><a href="/export">导出记录</a></li>
+
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#" id="username"></a></li>
+                <form class="navbar-form navbar-right">
+                    <button type="button" class="btn btn-default" onclick="logout()">退出登录</button>
+                </form>
+            </ul>
+
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+
+<script type="text/javascript">
+    $(function () {
+
+        var date = new Date();
+        var year = date.getFullYear();
+        var month = date.getMonth() + 1;
+        var day = date.getDate();
+        var time = year + "年" + month + "月" + day + "日";
+
+
+        $.ajax({
+            //请求方式
+            type: "get",
+            //请求的媒体类型
+            contentType: "application/json;charset=UTF-8",
+            //请求地址
+            url: "/checklogin",
+
+            //数据，json字符串
+            dataType: "json",
+            //请求成功
+            success: function (data) {
+                console.log(data)
+                //未登录
+                if (data.message == 'logout') {
+                    $("#username").text("用户名：");
+                } else {
+                    $("#username").text("用户名：" + data.username);
+                    $("#time").text(" 日期：" + time);
+                }
+            },
+            //请求失败，包含具体的错误信息
+            error: function (e) {
+                console.log(e.status);
+                console.log(e.responseText);
+            }
+        })
+    });
+
+    //注销
+    function logout() {
+        $.ajax({
+            //请求方式
+            type: "get",
+            //请求的媒体类型
+            contentType: "application/json;charset=UTF-8",
+            //请求地址
+            url: "/logout",
+
+            //数据，json字符串
+            dataType: "json",
+            //请求成功
+            success: function (data) {
+                console.log(data);
+                if (data.message == '已注销') {
+                    alert(data.message);
+                    //刷新页面
+                    location.reload();
+
+                } else {
+
+                }
+            },
+            //请求失败，包含具体的错误信息
+            error: function (e) {
+                console.log(e.status);
+                console.log(e.responseText);
+            }
+
+        })
+    }
+</script>
+<!--</body>-->
+<!--</html>-->

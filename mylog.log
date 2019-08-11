@@ -1,0 +1,63 @@
+2019-08-10 14:44:00.734  INFO 8608 --- [restartedMain] com.ty.lab.LabApplication                : Starting LabApplication on S0PMGSCQLJULMJQ with PID 8608 (started by Administrator in I:\实验室预约管理系统\lab)
+2019-08-10 14:44:00.826  INFO 8608 --- [restartedMain] com.ty.lab.LabApplication                : No active profile set, falling back to default profiles: default
+2019-08-10 14:44:01.023  INFO 8608 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-08-10 14:44:01.023  INFO 8608 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-08-10 14:44:02.509  INFO 8608 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2019-08-10 14:44:02.528  INFO 8608 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-08-10 14:44:02.528  INFO 8608 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-08-10 14:44:02.603  INFO 8608 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-08-10 14:44:02.603  INFO 8608 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1580 ms
+2019-08-10 14:44:02.689  INFO 8608 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2019-08-10 14:44:03.010  INFO 8608 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2019-08-10 14:44:03.461  INFO 8608 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-10 14:44:03.562  INFO 8608 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2019-08-10 14:44:04.465  INFO 8608 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-08-10 14:44:04.537  INFO 8608 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2019-08-10 14:44:04.540  INFO 8608 --- [restartedMain] com.ty.lab.LabApplication                : Started LabApplication in 4.27 seconds (JVM running for 5.205)
+2019-08-10 14:44:57.693  INFO 8608 --- [http-nio-8081-exec-1] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [1563777761,1564456901; TT_CART=%5B%5D; JSESSIONID=4AADCBE648916CF980791E2BDF309B95] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2019-08-10 14:44:57.702  INFO 8608 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-08-10 14:44:57.703  INFO 8608 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-08-10 14:44:57.723  INFO 8608 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 17 ms
+2019-08-10 22:16:09.704  INFO 13580 --- [restartedMain] com.ty.lab.LabApplication                : Starting LabApplication on S0PMGSCQLJULMJQ with PID 13580 (started by Administrator in I:\实验室预约管理系统\lab)
+2019-08-10 22:16:09.729  INFO 13580 --- [restartedMain] com.ty.lab.LabApplication                : No active profile set, falling back to default profiles: default
+2019-08-10 22:16:09.814  INFO 13580 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-08-10 22:16:09.814  INFO 13580 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-08-10 22:16:12.081  INFO 13580 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2019-08-10 22:16:12.140  INFO 13580 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-08-10 22:16:12.140  INFO 13580 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-08-10 22:16:12.376  INFO 13580 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-08-10 22:16:12.376  INFO 13580 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2562 ms
+2019-08-10 22:16:12.693  INFO 13580 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2019-08-10 22:16:13.137  INFO 13580 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2019-08-10 22:16:14.055  INFO 13580 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-10 22:16:14.213  INFO 13580 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2019-08-10 22:16:15.255  INFO 13580 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-08-10 22:16:15.353  INFO 13580 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2019-08-10 22:16:15.356  INFO 13580 --- [restartedMain] com.ty.lab.LabApplication                : Started LabApplication in 6.757 seconds (JVM running for 8.066)
+2019-08-10 22:17:05.712  INFO 13580 --- [http-nio-8081-exec-1] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [1563777761,1564456901; TT_CART=%5B%5D] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2019-08-10 22:17:05.719  INFO 13580 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-08-10 22:17:05.719  INFO 13580 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-08-10 22:17:05.725  INFO 13580 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2019-08-10 22:18:48.741  INFO 15320 --- [restartedMain] com.ty.lab.LabApplication                : Starting LabApplication on S0PMGSCQLJULMJQ with PID 15320 (started by Administrator in I:\实验室预约管理系统\lab)
+2019-08-10 22:18:48.744  INFO 15320 --- [restartedMain] com.ty.lab.LabApplication                : No active profile set, falling back to default profiles: default
+2019-08-10 22:18:48.812  INFO 15320 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-08-10 22:18:48.814  INFO 15320 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-08-10 22:18:50.559  INFO 15320 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2019-08-10 22:18:50.578  INFO 15320 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-08-10 22:18:50.578  INFO 15320 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-08-10 22:18:50.658  INFO 15320 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-08-10 22:18:50.659  INFO 15320 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1845 ms
+2019-08-10 22:18:50.743  INFO 15320 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2019-08-10 22:18:51.172  INFO 15320 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2019-08-10 22:18:51.654  INFO 15320 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-10 22:18:51.748  INFO 15320 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2019-08-10 22:18:51.933  INFO 15320 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-08-10 22:18:52.003  INFO 15320 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2019-08-10 22:18:52.007  INFO 15320 --- [restartedMain] com.ty.lab.LabApplication                : Started LabApplication in 3.716 seconds (JVM running for 4.571)
+2019-08-10 22:36:16.016  INFO 15320 --- [http-nio-8081-exec-5] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [1563777761,1564456901; TT_CART=%5B%5D; JSESSIONID=B80E1056C5C9B79092204568F0E85788] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2019-08-10 22:36:16.071  INFO 15320 --- [http-nio-8081-exec-5] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-08-10 22:36:16.072  INFO 15320 --- [http-nio-8081-exec-5] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-08-10 22:36:16.116  INFO 15320 --- [http-nio-8081-exec-5] o.s.web.servlet.DispatcherServlet        : Completed initialization in 44 ms

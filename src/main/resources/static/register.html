@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- meta data -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!--font-family-->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&amp;subset=devanagari,latin-ext"
+          rel="stylesheet">
+
+    <!-- title of site -->
+    <title>欢迎注册</title>
+    <!-- For favicon png -->
+    <link rel="shortcut icon" type="image/icon" href="assets/logo/favicon.png"/>
+
+    <!--font-awesome.min.css-->
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+
+    <!--animate.css-->
+    <link rel="stylesheet" href="assets/css/animate.css">
+
+    <!--bootstrap.min.css-->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <!-- bootsnav -->
+    <link rel="stylesheet" href="assets/css/bootsnav.css">
+
+    <!--style.css-->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!--responsive.css-->
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
+</head>
+
+<body>
+<!--[if lte IE 9]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade
+    your browser</a> to improve your experience and security.</p>
+<![endif]-->
+<!--<div class="container">-->
+    <!--<div class="row">-->
+        <!--<h1 class="text-center" style="color: #0066cc;">机房预约后台管理系统</h1>-->
+    <!--</div>-->
+<!--</div>-->
+<!--&lt;!&ndash; signin end &ndash;&gt;-->
+<!--<section class="signin signup">-->
+    <!--<div class="container">-->
+
+        <!--<div class="sign-content">-->
+            <!--<h2>欢迎注册</h2>-->
+
+            <!--<div class="row">-->
+                <!--<div class="col-sm-12">-->
+                    <!--<div class="signin-form">-->
+                        <!--<form action="login.html">-->
+
+                            <!--<div class="form-group">-->
+                                <!--<label>用户名</label>-->
+                                <!--<input type="text" class="form-control" id="username" placeholder="用户名">-->
+                            <!--</div>&lt;!&ndash;/.form-group &ndash;&gt;-->
+
+                            <!--<div class="form-group">-->
+                                <!--<label>密码</label>-->
+                                <!--<input type="password" class="form-control" id="password" placeholder="密码">-->
+                            <!--</div>&lt;!&ndash;/.form-group &ndash;&gt;-->
+                        <!--</form>&lt;!&ndash;/form &ndash;&gt;-->
+                    <!--</div>&lt;!&ndash;/.signin-form &ndash;&gt;-->
+                <!--</div>&lt;!&ndash;/.col &ndash;&gt;-->
+            <!--</div>&lt;!&ndash;/.row &ndash;&gt;-->
+
+
+            <!--<div class="row">-->
+                <!--<div class="col-sm-12">-->
+                    <!--<div class="signin-footer">-->
+                        <!--<button type="button" class="btn signin_btn" onclick="register()">-->
+                            <!--立即注册-->
+                        <!--</button>-->
+                        <!--<p>-->
+                            <!--已有账户?-->
+                            <!--<a href="login.html">登陆</a>-->
+                        <!--</p>-->
+                    <!--</div>&lt;!&ndash;/.signin-footer &ndash;&gt;-->
+                <!--</div>&lt;!&ndash;/.col&ndash;&gt;-->
+            <!--</div>&lt;!&ndash;/.row &ndash;&gt;-->
+
+        <!--</div>&lt;!&ndash;/.sign-content &ndash;&gt;-->
+
+    <!--</div>&lt;!&ndash;/.container &ndash;&gt;-->
+
+<!--</section>&lt;!&ndash;/.signin &ndash;&gt;-->
+
+<!--&lt;!&ndash; signin end &ndash;&gt;-->
+
+<!--&lt;!&ndash;footer copyright start &ndash;&gt;-->
+<!--<footer class="footer-copyright">-->
+    <!--<div id="scroll-Top" class="text-center">-->
+        <!--<span>Copyright © 2019 蜗牛商城. All rights reserved.</span>-->
+        <!--<i class="fa fa-angle-double-up return-to-top" id="scroll-top" data-toggle="tooltip" data-placement="top"-->
+           <!--title="" data-original-title="Back to Top" aria-hidden="true"></i>-->
+    <!--</div>&lt;!&ndash;/.scroll-Top&ndash;&gt;-->
+
+<!--</footer>&lt;!&ndash;/.hm-footer-copyright&ndash;&gt;-->
+<!--&lt;!&ndash;footer copyright  end &ndash;&gt;-->
+
+<div id="header">
+    <div class="container">
+        <div class="page-header">
+            <h1>实验室预约<small>微系统</small></h1>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-4 col-md-offset-4">
+            <form>
+                <div class="form-group">
+                    <label for="register_username">工号</label>
+                    <input type="text" class="form-control" id="register_username" placeholder="user name">
+                </div>
+                <div class="form-group">
+                    <label for="register_password">密码</label>
+                    <input type="password" class="form-control" id="register_password" placeholder="password">
+                </div>
+                <div class="form-group">
+                    <label for="register_password2">确认密码</label>
+                    <input type="password" class="form-control" id="register_password2" placeholder="password">
+                </div>
+                <div class="form-group">
+                    <label for="phone">联系方式</label>
+                    <input type="text" class="form-control" id="phone" placeholder="phone">
+                </div>
+                <div class="form-group">
+                    <label for="realname">姓名</label>
+                    <input type="text" class="form-control" id="realname" placeholder="realname">
+                </div>
+
+
+                <button type="button" class="btn btn-default" onclick="register()">立即注册</button>
+                <p>
+                    已有账号 ?
+                    <a href="login.html">登录</a>
+                </p>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<script src="assets/js/jquery.js"></script>
+
+
+<!--bootstrap.min.js-->
+<script src="assets/js/bootstrap.min.js"></script>
+
+
+
+
+
+<!--Custom JS-->
+<script src="assets/js/custom.js"></script>
+<script src="js/plugins/jquery/jquery.min.js"></script>
+
+<script type="text/javascript">
+    //登录
+    function login() {
+        var username = $("#username").val();
+        var password = $("#password").val();
+        if (username == undefined || password == undefined) {
+            alert("请输入用户名和密码")
+        } else {
+            $.ajax({
+                //请求方式
+                type: "POST",
+                //请求的媒体类型
+                contentType: "application/json;charset=UTF-8",
+                //请求地址
+                url: "/login",
+                //post提交，向后台传入用户名和密码
+                data:
+                    JSON.stringify(
+                        {
+                            "username": username,
+                            "password": password,
+                            "rid": 1         //表示管理员
+                        }
+                    )
+                ,
+                //数据，json字符串
+                dataType: "json",
+                //请求成功
+                success: function (data) {
+                    console.log(data);
+                    alert(data.message);
+                    //刷新页面
+                    location.reload();
+                },
+                //请求失败，包含具体的错误信息
+                error: function (e) {
+                    console.log(e.status);
+                    console.log(e.responseText);
+                }
+
+            })
+        }
+
+    }
+
+    //注册
+    function register() {
+        var username = $("#register_username").val();
+        var password = $("#register_password").val();
+        var password2 = $("#register_password2").val();
+        if (password != password2) {
+            alert("两次输入密码不一致");
+            return;
+        }
+        if (username == '' || password == '') {
+            alert("请输入用户名和密码")
+        } else {
+            $.ajax({
+                //请求方式
+                type: "POST",
+                //请求的媒体类型
+                contentType: "application/json;charset=UTF-8",
+                //请求地址
+                url: "/register",
+                //post提交，向后台传入用户名和密码
+                data:
+                    JSON.stringify(
+                        {
+                            "username": username,
+                            "password": password,
+                            "rid": 1             //角色为管理员
+
+                        }
+                    )
+                ,
+                //数据，json字符串
+                dataType: "json",
+                //请求成功
+                success: function (data) {
+                    console.log(data);
+                    alert(data.message);
+                    //刷新页面
+                    location.reload();
+                },
+                //请求失败，包含具体的错误信息
+                error: function (e) {
+                    console.log(e.status);
+                    console.log(e.responseText);
+                }
+
+            })
+        }
+
+    }
+</script>
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+server:
+  port: 8081
+
+spring:
+  datasource:
+    name: test
+    type: com.alibaba.druid.pool.DruidDataSource
+
+    druid:
+      url: jdbc:mysql://127.0.0.1:3306/labrec?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=CTT
+      username: root
+      password: 456789 # 使用druid数据源
+      driver-class-name: com.mysql.jdbc.Driver
+      filters: stat
+      maxActive: 20
+      initialSize: 1
+      maxWait: 60000
+      minIdle: 1
+      timeBetweenEvictionRunsMillis: 60000
+      minEvictableIdleTimeMillis: 300000
+      validationQuery: select 'x'
+      testWhileIdle: true
+      testOnBorrow: false
+      testOnReturn: false
+      poolPreparedStatements: true
+      max-pool-prepared-statement-per-connection-size: 20
+  mvc:
+    view:
+      suffix: .html
+      prefix: /
+    favicon:
+      enabled: true
+
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 30048576
+      max-request-size: 30048576
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml  #注意：一定要对应mapper映射xml文件的所在路径
+
+#pagehelper分页插件
+pagehelper:
+  helperDialect: mysql
+  reasonable: true
+  supportMethodsArguments: true
+  params: count=countSql
+
+logging:
+  file: mylog.log

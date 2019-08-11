@@ -1,0 +1,116 @@
+<div class="container-fluid">
+    <div class="row" style="background: #1b629c">
+        <div class="col-md-10" style="height: 120px;">
+
+            <h2 style="color: #f8fafc;line-height: 80px;">机房预约后台管理系统</h2>
+        </div>
+        <div class="col-md-2" style="height: 120px;color: #ffffff;">
+
+            <h5 id="username"></h5>
+            <h5 id="time"></h5>
+            <button class="btn btn-sm btn-primary" onclick="logout()">退出登录</button>
+        </div>
+    </div>
+    <div class="row" style="background: #2769A6">
+        <div class="col-md-12 " style="color: #ffffff;line-height: 45px;">
+            <div class="col-md-1 text-center" onmouseover="this.style.background='#74b4f9'"
+                 onmouseout="this.style.background='#2769A6'">
+                <a href="#" onclick="location.href='main.html'" style="color: #ffffff;">首页</a>
+            </div>
+            <div class="col-md-1 text-center" onmouseover="this.style.background='#74b4f9'"
+                 onmouseout="this.style.background='#2769A6'">
+                <a href="#" onclick="location.href='accountinfo.html'" style="color: #ffffff;">账号管理</a>
+            </div>
+            <div class="col-md-1 text-center" onmouseover="this.style.background='#74b4f9'"
+                 onmouseout="this.style.background='#2769A6'">
+                <a href="#" onclick="location.href='labname.html'" style="color: #ffffff;">机房名称</a>
+            </div>
+            <div class="col-md-1 text-center" onmouseover="this.style.background='#74b4f9'"
+                 onmouseout="this.style.background='#2769A6'">
+                <a href="#" onclick="location.href='labrecord.html'" style="color: #ffffff;">预约记录</a>
+            </div>
+            <div class="col-md-1 text-center" onmouseover="this.style.background='#74b4f9'"
+                 onmouseout="this.style.background='#2769A6'">
+                <a href="#" onclick="location.href='labstate.html'" style="color: #ffffff;">时间段管理</a>
+            </div>
+            <div class="col-md-1 text-center" onmouseover="this.style.background='#74b4f9'"
+                 onmouseout="this.style.background='#2769A6'">
+                <a href="/export" style="color: #ffffff;">导出记录</a>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    $(function () {
+
+        var date = new Date();
+        var year = date.getFullYear();
+        var month = date.getMonth() + 1;
+        var day = date.getDate();
+        var time = year + "年" + month + "月" + day + "日";
+
+
+        $.ajax({
+            //请求方式
+            type: "get",
+            //请求的媒体类型
+            contentType: "application/json;charset=UTF-8",
+            //请求地址
+            url: "/checklogin",
+
+            //数据，json字符串
+            dataType: "json",
+            //请求成功
+            success: function (data) {
+                console.log(data)
+                //未登录
+                if (data.message == 'logout') {
+                    $("#username").text("用户名：");
+                } else {
+                    $("#username").text("用户名：" + data.username);
+                    $("#time").text(" 日期：" + time);
+                }
+            },
+            //请求失败，包含具体的错误信息
+            error: function (e) {
+                console.log(e.status);
+                console.log(e.responseText);
+            }
+        })
+    });
+
+    //注销
+    function logout() {
+        $.ajax({
+            //请求方式
+            type: "get",
+            //请求的媒体类型
+            contentType: "application/json;charset=UTF-8",
+            //请求地址
+            url: "/logout",
+
+            //数据，json字符串
+            dataType: "json",
+            //请求成功
+            success: function (data) {
+                console.log(data);
+                if (data.message == '已注销') {
+                    alert(data.message);
+                    //刷新页面
+                    location.reload();
+
+                } else {
+
+                }
+            },
+            //请求失败，包含具体的错误信息
+            error: function (e) {
+                console.log(e.status);
+                console.log(e.responseText);
+            }
+
+        })
+    }
+</script>

@@ -1,0 +1,417 @@
+/*==================================
+* Author        : "ThemeSine"
+* Template Name : Sign-up  HTML Template
+* Version       : 1.0
+==================================== */
+
+/*==================================
+font-family: 'Poppins', sans-serif;
+==================================== */
+
+
+/*=========== TABLE OF CONTENTS ===========
+1.  General css (Reset code)
+
+/*-------------------------------------
+		1.General css (Reset code)
+--------------------------------------*/
+* {
+    padding: 0;
+    margin: 0;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: #a7a7a7;
+    background: #fff;
+    max-width: 1920px;
+    margin: 0 auto;
+    overflow-x: hidden;
+}
+
+a, a:hover, a:active, a:focus {
+    display: inline-block;
+    text-decoration: none;
+    color: #7c8089;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    color: #464d5f;
+    font-family: 'Poppins', sans-serif;
+    text-transform: capitalize;
+    font-weight: 400;
+}
+
+p {
+    margin: 0;
+    line-height: 28px;
+    color: #97a0ba;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+
+img {
+    border: none;
+    max-width: 100%;
+    height: auto;
+}
+
+ul {
+    padding: 0;
+    margin: 0 auto;
+    list-style: none;
+}
+
+ul li {
+    list-style: none;
+
+}
+
+select, input, textarea, button, .form-control {
+    box-shadow: none;
+    outline: 0 !important;
+}
+
+
+html, body {
+    height: 100%;
+    position: relative;
+    z-index: 2;
+}
+
+[placeholder]:focus::-webkit-input-placeholder {
+    -webkit-transition: opacity 0.3s 0.3s ease;
+    -moz-transition: opacity 0.3s 0.3s ease;
+    -ms-transition: opacity 0.3s 0.3s ease;
+    -o-transition: opacity 0.3s 0.3s ease;
+    transition: opacity 0.3s 0.3s ease;
+    opacity: 0;
+}
+
+/*=============Style css=========*/
+
+/*-------------------------------------
+		2. Header
+--------------------------------------*/
+.signin {
+    background: #fff;
+    padding: 216px 0;
+}
+
+.signin.signup {
+    padding: 123px 0px;
+}
+
+.sign-content {
+    max-width: 620px;
+    margin: 0 auto;
+}
+
+.sign-content h2 {
+    color: #464d5f;
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 65px;
+}
+
+/*.signin-form  .form-control*/
+.signin-form .form-control {
+    background: transparent;
+    border: transparent;
+    border: 1px solid #c3c6cf;
+    border-radius: 3px;
+    outline: 0 !important;
+    box-shadow: none;
+    padding: 0px 0;
+    height: 46px;
+    -webkit-transition: linear .5s;
+    -moz-transition: linear .5s;
+    -ms-transition: linear .5s;
+    -o-transition: linear .5s;
+    transition: linear .5s;
+}
+
+.signin-form .form-control:hover, .signin-form .form-control:focus {
+    border: 1px solid #474d5b;
+    color: #464e60;
+    box-shadow: 0px 5px 10px rgba(45, 50, 64, .2);
+}
+
+.signin-form label {
+    color: #7c8089;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+    margin-bottom: 15px;
+}
+
+.signin-form input[type="text"], .signin-form input[type="email"], .signin-form input[type="password"] {
+    color: #464e60;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: capitalize;
+    padding: 0 18px;
+}
+
+.signin-form .form-col {
+    width: 48.5%;
+    float: left;
+
+}
+
+.signin-form .form-col1 {
+    width: 48%;
+    float: right;
+}
+
+/*.signin-form  .form-control*/
+
+/*.password-circle*/
+.styled-checkbox {
+    position: absolute;
+    opacity: 0;
+    -webkit-transition: ease-in-out .3s;
+    -moz-transition: ease-in-out .3s;
+    -ms-transition: ease-in-out .3s;
+    -o-transition: ease-in-out .3s;
+    transition: ease-in-out .3s;
+}
+
+.styled-checkbox + label, .awesome-checkbox-list a {
+    position: relative;
+    cursor: pointer;
+    padding: 0;
+    color: #91949c;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+/* Box.*/
+.styled-checkbox + label:before {
+    position: relative;
+    top: -3px;
+    content: '';
+    margin-right: 16px;
+    display: inline-block;
+    vertical-align: text-top;
+    width: 25px;
+    height: 25px;
+    background: transparent;
+    border: 1px solid #ebebeb;
+}
+
+/* Box hover*/
+.styled-checkbox:hover + label:before {
+    background: #fff;
+    box-shadow: 2px 3px 15px rgba(45, 50, 64, .25);
+}
+
+/*Box checked*/
+.styled-checkbox:checked + label:before {
+    background: #fff;
+    box-shadow: none;
+}
+
+/*Checkmark. Could be replaced with an image*/
+.styled-checkbox:checked + label:after {
+    content: '';
+    position: absolute;
+    left: 8px;
+    top: 9px;
+    background: #5a84fd;
+    width: 2px;
+    height: 2px;
+    box-shadow: 2px 0 0 #5a84fd,
+    4px 0 0 #5a84fd,
+    4px -2px 0 #5a84fd,
+    4px -4px 0 #5a84fd,
+    4px -6px 0 #5a84fd,
+    4px -8px 0 #5a84fd;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+
+.unstyled li {
+    display: inline-block;
+    margin: 10px 10px 10px 0;
+    float: left;
+}
+
+.centered {
+    max-width: 620px;
+    margin: auto;
+}
+
+.title {
+    text-align: center;
+    color: rgb(69, 113, 236);
+}
+
+.unstyled li:last-child {
+    float: right;
+}
+
+/*.password-circle*/
+
+/*.btn.signin_btn*/
+.btn.signin_btn, .btn.signin_btn:focus {
+    width: 620px;
+    padding: 0;
+    height: 60px;
+    background: #5a84fd;
+    color: #fff;
+    font-size: 14px;
+    text-transform: uppercase;
+    border-radius: 3px;
+    box-shadow: 0 5px 30px rgba(0, 66, 255, .3);
+    margin-top: 23px;
+}
+
+/*.btn.signin_btn*/
+
+.signin-footer p {
+    color: #91949c;
+    font-size: 16px;
+    max-width: 265px;
+    margin: 35px auto;
+
+}
+
+.signin-footer p > a {
+    color: #7c8089;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+
+}
+
+/*modal-header*/
+.modal-content {
+    max-width: 620px;
+    margin: 0 auto;
+    padding: 60px 0;
+}
+
+.modal-body {
+    position: relative;
+    padding: 0;
+}
+
+.modal-content .sign-content, .modal-content .centered {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.modal-content .btn.signin_btn, .modal-content .btn.signin_btn:focus {
+    width: 500px;
+}
+
+.modal-header {
+    padding: 0;
+    border-bottom: transparent;
+    margin-left: 0px;
+}
+
+/*modal-header*/
+
+/*.signin.popup-in*/
+.signin.popup-in {
+    padding: 146px 0;
+}
+
+.signin.signup.popup-up {
+    padding: 48px 0;
+}
+
+.signin.popup-in, .signin.signup.popup-up {
+    position: relative;
+    background: url(../images/popupsignin.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+}
+
+.signin.popup-in:before, .signin.signup.popup-up:before {
+    position: absolute;
+    content: " ";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .7);
+    z-index: -1;
+}
+
+.sign-content.popup-in-content {
+    background: #fff;
+    border-radius: 5px;
+    padding: 60px 0 100px;
+
+
+}
+
+.popup-in-txt {
+    max-width: 500px;
+    margin: 0 auto;
+
+}
+
+.sign-content.popup-in-content .btn.signin_btn, .sign-content.popup-in-content .btn.signin_btn:focus {
+    width: 500px;
+}
+
+/*.signin.popup-in*/
+
+
+/*===============================
+    Scroll Top
+===============================*/
+#scroll-Top .return-to-top {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    display: none;
+    width: 40px;
+    line-height: 40px;
+    height: 40px;
+    text-align: center;
+    font-size: 30px;
+    cursor: pointer;
+    color: #fff;
+    background: #1c7cf8;
+    border: 1px solid #1c7cf8;
+    border-radius: 5px;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s;
+    z-index: 2;
+}
+
+#scroll-Top .return-to-top:hover {
+    background: #f9fbff;
+    color: #1c7cf8;
+    border: 1px solid #1c7cf8;
+    border-radius: 50%;
+}
+
+/*========================Thank you=================
