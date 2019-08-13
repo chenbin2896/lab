@@ -1,6 +1,6 @@
 # Lab_TST_ING
 <p>
-  <a href="https://github.com/macrozheng/mall-admin-web"><img src="http://macro-oss.oss-cn-shenzhen.aliyuncs.com/mall/badge/%E5%89%8D%E7%AB%AF%E9%A1%B9%E7%9B%AE-mall--admin--web-green.svg" alt="前端项目"></a>
+  <a href="https://github.com/xiaoguangdong999/lab-client"><img src="http://macro-oss.oss-cn-shenzhen.aliyuncs.com/mall/badge/%E5%89%8D%E7%AB%AF%E9%A1%B9%E7%9B%AE-mall--admin--web-green.svg" alt="前端项目"></a>
 </p>
 ## 前言
 lab 项目致力于打造一个完整的高校实验室预约系统，采用现阶段流行技术实现。
