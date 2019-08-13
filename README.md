@@ -2,21 +2,21 @@
 <p>
   <a href="https://github.com/macrozheng/mall-admin-web"><img src="http://macro-oss.oss-cn-shenzhen.aliyuncs.com/mall/badge/%E5%89%8D%E7%AB%AF%E9%A1%B9%E7%9B%AE-mall--admin--web-green.svg" alt="前端项目"></a>
 </p>
-# 前言
+## 前言
 lab 项目致力于打造一个完整的高校实验室预约系统，采用现阶段流行技术实现。
-# 项目介绍
+## 项目介绍
 lab 是一套实验室预约系统，包括前台预约系统和后台管理系统。基于SpringBoot+Mybatis实现。前台预约系统包含实验室查询、预约、取消预约、预约记录查询、公告通知、仪器设备操作配置说明等模块。后台管理包括实验室管理、预约管理、用户管理、公告管理等模块
-# 项目演示
+## 项目演示
 
-## 前台预约系统
+### 前台预约系统
 
-## 后台管理系统
+### 后台管理系统
 
-# 组织结构
+## 组织结构
 
-# 技术选型
+## 技术选型
 
-## 后端技术
+### 后端技术
 
 技术 | 说明 | 官网
 ----|----|----
@@ -28,14 +28,14 @@ PageHelper | MyBatis物理分页插件 | [http://git.oschina.net/free/Mybatis_Pa
 Druid | 数据库连接池 | [https://github.com/alibaba/druid](https://github.com/alibaba/druid)
 Lombok | 简化对象封装工具 | [https://github.com/rzwitserloot/lombok](https://github.com/rzwitserloot/lombok)
 
-## 前端技术
+### 前端技术
 技术 | 说明 | 官网
 ----|----|----
 angularjs | 前端框架 | [https://www.angularjs.net.cn/](https://www.angularjs.net.cn/)
 
-# 环境环境
+## 环境环境
 
-## 开发工具
+### 开发工具
 
 工具 | 说明 | 官网
 ----|----|----
@@ -53,7 +53,7 @@ ProcessOn | 流程图绘制工具 | https://www.processon.com/
 PicPick | 图片处理工具 | https://picpick.app/zh/
 Snipaste | 屏幕截图工具 | https://www.snipaste.com/
 
-## 开发环境
+### 开发环境
 
 工具 | 版本号 | 下载
 ----|----|----
@@ -61,4 +61,4 @@ JDK | 1.8 | https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downlo
 Mysql | 5.7 | https://www.mysql.com/
 nginx | 1.10 | http://nginx.org/en/download.html
 
-# 公众号
+### 公众号
