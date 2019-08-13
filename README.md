@@ -9,10 +9,10 @@ lab 是一套实验室预约系统，包括前台预约系统和后台管理系�
 ## 项目演示
 
 ### 前台预约系统
-
+![前台预约系统功能演示.png](/document/resource/lab1.png)
+![前台预约系统功能演示.png](/document/resource/lab2.png)
 ### 后台管理系统
-
-## 组织结构
+![后台管理系统功能演示.png](/document/resource/man1.png)
 
 ## 技术选型
 
@@ -61,4 +61,4 @@ JDK | 1.8 | https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downlo
 Mysql | 5.7 | https://www.mysql.com/
 nginx | 1.10 | http://nginx.org/en/download.html
 
-### 公众号
+
