@@ -16,7 +16,7 @@
 
     <properties>
         <mybatis-starter.version>2.0.1</mybatis-starter.version>
-        <mysql.version>5.1.6</mysql.version>
+        <mysql.version>8.0.16</mysql.version>
         <page-helper.version>1.2.5</page-helper.version>
         <druid.version>1.1.9</druid.version>
         <slf4j-api.version>1.7.25</slf4j-api.version>
